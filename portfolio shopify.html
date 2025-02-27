@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Laralink">
+  <link rel="icon" href="assets/img/logo-tittle.png">
+<title>Portfolio SHOPIFY</title>
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/slick.css">
+  <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/animate.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>/* General styling for portfolio section */
+  /* General styling for portfolio section */
+/* General styling for portfolio section */
+.portfolio_blogs {
+  padding: 50px 0;
+
+}
+
+.portfolio_blogs h2 {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+
+}
+
+/* Styling for each blog item */
+.blog-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-item:hover {
+  transform: translateY(-10px);
+}
+
+.image-container {
+  position: relative;
+}
+
+.cs-portfolio_img_in {
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-portfolio_img_in img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Shine effect on hover */
+.cs-portfolio_img_in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(255, 255, 255, 0.15)));
+  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.15) 100%);
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  z-index: 1;
+}
+
+/* Make shine move from left to right when hovered */
+.blog-item:hover .cs-portfolio_img_in::before {
+  -webkit-animation: shine 1.3s;
+          animation: shine 1.3s;
+}
+
+/* Animation for the shine effect */
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/* Styling for the overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.blog-item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.preview-button {
+  background-color: #FF7900;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.preview-button:hover {
+  background-color: #ebbaac;
+  color: black;
+  font-weight: bolder;
+}
+
+.download-info {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.download-info a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.download-info a:hover {
+  text-decoration: underline;
+}
+
+  
+/*  */
+.portfolio_blogs {
+  margin-top: -150px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.blog-item {
+  border: 2px solid #6f6f6f;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  min-height: 300px; /* Set a medium height */
+  display: flex;
+  flex-direction: column; /* Ensure content aligns vertically */
+}
+
+.blog-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-item img {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 300px; /* Restrict image height to maintain a balanced look */
+  object-fit: cover; /* Ensure the image covers the area properly without stretching */
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   /* Adjust height for tablets */
+  }
+  .blog-item {
+
+  min-height: 200px; /* Set a medium height */
+  /* Ensure content aligns vertically */
+}
+
+}
+
+/*  */
+</style>
+
+<body>
+  
+  <!-- Start Header Section -->
+  <div class="cs-preloader cs-center">
+    <div class="cs-preloader_in"></div>
+  </div>
+  <!-- Start Header Section -->
+  <header class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
+    <div class="cs-main_header">
+      <div class="container">
+        <div class="cs-main_header_in">
+       <a href="Index.html">
+        <img src="logo-web/Auorix LOGO_White.svg" style="width: 150px; height: auto;">
+       </a>
+          <div class="cs-main_header_center">
+            <div class="cs-nav cs-primary_font cs-medium">
+              <ul class="cs-nav_list">
+                <li class=" cs-mega_menu">
+                  <a href="Index.html">Home</a>
+                <li class="menu-item-has-children"><a href="service.html">Services</a>
+                  <ul>
+                    <li><a class="undeline" href="Videoediting.html">VIDEO EDITING</a></li>
+                    <li><a class="undeline" href="motion graphic.html">MOTION GRAPHICS</a></li>
+                    <li><a class="undeline" href="Graphics Designing.html">GRAPHIC DESIGN</a></li>
+                    <li><a class="undeline" href="logodesign.html">LOGO DESIGN</a></li>
+                    <li><a class="undeline" href="UX design.html">UI & UX DESIGN</a></li>
+                    <li><a class="undeline" href="Webdesigning.html">WEBSITE DESIGN & DEVELOPMENT</a></li>
+                  </ul>
+                </li>
+                <li ><a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul> 
+            </div>
+          </div>
+          <div class="cs-main_header_right">
+            <div class="cs-toolbox">
+              <span class="cs-icon_btn">
+                <span class="cs-icon_btn_in">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </span>
+            </div>
+            <div>
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label>
+            </div>
+            
+                    
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="cs-side_header">
+    <button class="cs-close"></button>
+    <div class="cs-side_header_overlay"></div>
+    <div class="cs-side_header_in">
+      <div class="cs-side_header_shape"></div>
+      <a class="cs-site_branding" href="index.html">
+        <img src="logo-web/Auorix LOGO_White.svg" style="width: 150px; height: auto;">
+      </a>
+      <div class="cs-side_header_box">
+        <h2 class="cs-side_header_heading">Do you have a project in your  <br> mind? Keep connect us.</h2>
+      </div>
+      <div class="cs-side_header_box">
+        <h3 class="cs-side_header_title cs-primary_color">Contact Us</h3>
+        <ul class="cs-contact_info cs-style1 cs-mp0">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 12.5C15.75 12.5 14.55 12.3 13.43 11.93C13.08 11.82 12.69 11.9 12.41 12.17L10.21 14.37C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.58C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.5C18 12.95 17.55 12.5 17 12.5ZM9 0V10L12 7H18V0H9Z" fill="#FF4A17"/>
+            </svg>
+            <span style="color: white;">+44 454 7800 112</span>
+          </li>
+          <li>
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6.98V16C20 17.1 19.1 18 18 18H2C0.9 18 0 17.1 0 16V4C0 2.9 0.9 2 2 2H12.1C12.04 2.32 12 2.66 12 3C12 4.48 12.65 5.79 13.67 6.71L10 9L2 4V6L10 11L15.3 7.68C15.84 7.88 16.4 8 17 8C18.13 8 19.16 7.61 20 6.98ZM14 3C14 4.66 15.34 6 17 6C18.66 6 20 4.66 20 3C20 1.34 18.66 0 17 0C15.34 0 14 1.34 14 3Z" fill="#FF4A17"/>
+            </svg>              
+            <span style="color: white;">infotech@arino.com</span>
+          </li>
+          <li>
+            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#FF4A17"/>
+            </svg>              
+            <span style="color: white;">50 Wall Street Suite, 44150 <br>Ohio, United States</span>
+          </li>
+        </ul>
+      </div>
+      <div class="cs-side_header_box">
+        <h3 class="cs-side_header_title cs-primary_color">Subscribe</h3>
+        <div class="cs-newsletter cs-style1">
+          <form action="#" class="cs-newsletter_form">
+            <input type="email" class="cs-newsletter_input" placeholder="example@gmail.com">
+            <button class="cs-newsletter_btn"><span>Send</span></button>
+          </form>
+          <div style="color: white;" class="cs-newsletter_text">At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit.</div>
+        </div>
+      </div>
+      <div class="cs-side_header_box">
+        <div class="cs-social_btns cs-style1">
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/fb-icon.gif" alt="">
+          </a>
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/watsapp icon.gif" alt="">     
+          </a>
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/instagram.gif" alt="">           
+          </a>
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/twitter.gif" alt="">           
+          </a>
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/linkedin.gif" alt="">           
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Header Section -->
+  
+  <!-- End Header Section -->
+  
+  <!-- Start Hero -->
+  <div class="gradient-background">
+    <svg height="100" stroke="#bac736" stroke-width="2" class="text-line loop-animation" width="100%">
+      <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">#SHOPIFY</text>
+    </svg>
+  </div>
+
+  <!-- End Hero -->
+
+  <!-- About Website -->
+
+  <!-- End Why Choose -->
+
+       <br><br>
+      <!-- start blog -->
+      <section style="margin-top: 15px;" class="portfolio_blogs">
+        <div class="container">
+         
+          <div class="blog-grid">
+            <div class="blog-item" onclick="openFolder('project1')">
+              <a href="shopify Shoping/index.html" target="_blank" rel="noopener noreferrer">
+                <div class="image-container">
+                  <div class="cs-portfolio_img_in cs-shine_hover_1">
+                    <img src="assets/img/Shopify1.PNG" alt="Blog 6" class="cs-w100">
+                  </div>
+                  <div class="overlay">
+                    <button class="preview-button">Live Preview</button>
+                    <p class="download-info">
+                 
+                    
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+        
+            
+
+            <div class="blog-item" onclick="openFolder('project1')">
+              <a href="Shopify all Category/index.html" target="_blank" rel="noopener noreferrer">
+                <div class="image-container">
+                  <div class="cs-portfolio_img_in cs-shine_hover_1">
+                    <img src="assets/img/Shopify2.PNG" alt="Blog 6" class="cs-w100">
+                  </div>
+                  <div class="overlay">
+                    <button class="preview-button">Live Preview</button>
+                    <p class="download-info">
+                 
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+        
+            <div class="blog-item" onclick="openFolder('project1')">
+              <a href="Shopify Book Stall/index.html" target="_blank" rel="noopener noreferrer">
+                <div class="image-container">
+                  <div class="cs-portfolio_img_in cs-shine_hover_1">
+                    <img src="assets/img/Shopify3.PNG" alt="Blog 6" class="cs-w100">
+                  </div>
+                  <div class="overlay">
+                    <button class="preview-button">Live Preview</button>
+                    <p class="download-info">
+                 
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+        
+            <div class="blog-item" onclick="openFolder('project1')">
+              <a href="Shopify Books/index.html" target="_blank" rel="noopener noreferrer">
+                <div class="image-container">
+                  <div class="cs-portfolio_img_in cs-shine_hover_1">
+                    <img src="assets/img/Shopify4.PNG"   alt="Blog 6" class="cs-w100">
+                  </div>
+                  <div class="overlay">
+                    <button class="preview-button">Live Preview</button>
+                    <p class="download-info">
+                 
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="blog-item" onclick="openFolder('project1')">
+                <a href="Shopify flower/index.html" target="_blank" rel="noopener noreferrer">
+                  <div class="image-container">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1">
+                      <img src="assets/img/Shopify5.PNG"  alt="Blog 6" class="cs-w100">
+                    </div>
+                    <div class="overlay">
+                      <button class="preview-button">Live Preview</button>
+                      <p class="download-info">
+                   
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+              <div class="blog-item" onclick="openFolder('project1')">
+                <a href="Shopify juice/index.html" target="_blank" rel="noopener noreferrer">
+                  <div class="image-container">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1">
+                      <img src="assets/img/Shopify76.PNG"   alt="Blog 6" class="cs-w100">
+                    </div>
+                    <div class="overlay">
+                      <button class="preview-button">Live Preview</button>
+                      <p class="download-info">
+                   
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+             
+
+              <div class="blog-item" onclick="openFolder('project1')">
+                <a href="Shopify Adventure/index.html" target="_blank" rel="noopener noreferrer">
+                  <div class="image-container">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1">
+                      <img src="assets/img/Shopify-adventure.PNG"  alt="Blog 6" class="cs-w100">
+                    </div>
+                    <div class="overlay">
+                      <button class="preview-button">Live Preview</button>
+                      <p class="download-info">
+                   
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="blog-item" onclick="openFolder('project1')">
+                <a href="Shopify Fish/index.html" target="_blank" rel="noopener noreferrer">
+                  <div class="image-container">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1">
+                      <img src="assets/img/Shopify-image.PNG"  alt="Blog 6" class="cs-w100">
+                    </div>
+                    <div class="overlay">
+                      <button class="preview-button">Live Preview</button>
+                      <p class="download-info">
+                   
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="blog-item" onclick="openFolder('project1')">
+                <a href="shopify rose/index.html" target="_blank" rel="noopener noreferrer">
+                  <div class="image-container">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1">
+                      <img src="assets/img/shopify-rose.PNG"  alt="Blog 6" class="cs-w100">
+                    </div>
+                    <div class="overlay">
+                      <button class="preview-button">Live Preview</button>
+                      <p class="download-info">
+                   
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="blog-item" onclick="openFolder('project1')">
+                <a href="Shopify fashion/index.html" target="_blank" rel="noopener noreferrer">
+                  <div class="image-container">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1">
+                      <img src="assets/img/shopify-fashion.PNG"  alt="Blog 6" class="cs-w100">
+                    </div>
+                    <div class="overlay">
+                      <button class="preview-button">Live Preview</button>
+                      <p class="download-info">
+                   
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+            </div>
+        </div>
+    </section><br><br>
+   
+   <!-- Start CTA -->
+   <section>
+    <div class="container">
+      <div class="cs-cta cs-style1 cs-bg text-center cs-shape_wrap_1 cs-position_1" data-src="assets/img/cta_bg.jpeg">
+        <div class="cs-shape_1"></div>
+        <div class="cs-shape_1"></div>
+        <div class="cs-shape_1"></div>
+        <div class="cs-cta_in">
+          <h2 class="cs-cta_title cs-semi_bold cs-m0">Let’s disscuse make <br>something <i>Amazing</i> together </h2>
+          <div class="cs-height_70 cs-height_lg_30"></div>
+          <a href="contact.html" class="cs-text_btn">
+            <span>Apply For Meeting</span>
+            <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z" fill="#FF7900" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section><br><br><br>
+  <!-- End CTA -->
+  <!-- Start Footer -->
+  <footer style="background-color: black;" class="cs-fooer">
+    <div class="cs-fooer_main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs-footer_item">
+              <div class="cs-text_widget">
+                <img src="logo-web/Auorix LOGO_White.svg" style="width: 150px; height: auto; margin-top: -20px;" alt="Thumb">
+                <p style="color: white;">These services enhance user engagement, streamline operations, and boost online presence. With cutting-edge technology and creative expertise, digital agencies help brands stay ahead in a competitive digital landscape.</p>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs-footer_item">
+              <h2 style="margin-left: 40px;" class="cs-widget_title">Pages</h2>
+              <ul style="margin-left: 40px;" class="cs-menu_widget cs-mp0">
+                <li><a style="color: white;" href="Index.html">Home</a></li>
+                <li><a style="color: white;" href="service.html">Services</a></li>
+                <li><a style="color: white;" href="portfolio.html">Portfolio</a></li>
+                <li><a style="color: white;" href="about.html">About</a></li>
+                <li><a style="color: white;" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs-footer_item">
+              <h2 class="cs-widget_title">Services</h2>
+              <ul class="cs-menu_widget cs-mp0">
+                <li><a style="color: white;" href="Videoediting.html">Video Editing</a></li>
+                <li><a style="color: white;" href="motion graphic.html">Motion Graphics</a></li>
+                <li><a style="color: white;" href="Graphics Designing.html">Graphic Design</a></li>
+                <li><a style="color: white;" href="logodesign.html">Logo Design</a></li>
+                <li><a style="color: white;" href="UX design.html">UI & UX Design</a></li>
+                <li><a style="color: white;" href="Webdesigning.html">Website Design & Development</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs-footer_item">
+              <h2 class="cs-widget_title">Subscribe</h2>
+              <div class="cs-newsletter cs-style1">
+                <form id="cs-form"  action="https://api.web3forms.com/submit" method="POST" class="cs-newsletter_form">
+                  <input type="hidden" name="access_key" value="c57e6bb0-ef77-4f34-b9da-7bf836b66c4d">
+                <input style="background-color: aliceblue; color: black;" placeholder="Email" type="text" class="cs-newsletter_input" name="email" required>
+                <button  class="cs-newsletter_btn" type="submit" style="font-size: 12px; padding: 5px 10px; min-width: 80px; margin-top: 3px;">
+                  <span>Send Message</span>       
+                </button>
+                <div id="cs-result"></div>
+                <div style="color: white;" class="cs-newsletter_text">Email is a powerful digital service used for communication, marketing, and customer engagement. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: black;" class="container">
+      <div class="cs-bottom_footer">
+        <div class="cs-bottom_footer_left">
+          <div style="color: white;" class="cs-copyright"> All Rights Reserved © Auorix  LLC. 2025</div>
+        </div>
+        <ul class="cs-footer_links cs-mp0">
+          <div class="cs-social_btns cs-style1">
+            <a href="#" class="cs-center social-icon">
+              <img src="assets/img/icons8-fb-50.png" alt="">
+            </a>
+            <a href="#" class="cs-center social-icon">
+              <img src="assets/img/icons8-insta-50.png" alt="">     
+            </a>
+            <a href="#" class="cs-center social-icon">
+              <img src="assets/img/icons8-linkedin-50.png" alt="">           
+            </a>
+            <a href="#" class="cs-center social-icon">
+              <img src="assets/img/icons8-twitter-24.png" alt="">           
+            </a>
+            <a href="#" class="cs-center social-icon">
+              <img src="assets/img/icons8-whatsapp-50.png" alt="">           
+            </a>
+            
+          </div>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <span class="cs-scrollup">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z" fill="currentColor"/>
+    </svg>      
+  </span>
+  
+  <!-- Start Video Popup -->
+  <div class="cs-video_popup">
+    <div class="cs-video_popup_overlay"></div>
+    <div class="cs-video_popup_content">
+      <div class="cs-video_popup_layer"></div>
+      <div class="cs-video_popup_container">
+        <div class="cs-video_popup_align">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="about:blank"></iframe>
+          </div>
+        </div>
+        <div class="cs-video_popup_close"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Video Popup -->
+
+  <!-- Script -->
+  <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/plugins/isotope.pkg.min.js"></script>
+  <script src="assets/js/plugins/jquery.slick.min.js"></script>
+  <script src="assets/js/plugins/jquery.counter.min.js"></script>
+  <script src="assets/js/plugins/lightgallery.min.js"></script>
+  <script src="assets/js/plugins/wow.min.js"></script>
+  <script src="assets/js/plugins/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+
+   <script>
+    // Initialize lightGallery
+$(document).ready(function() {
+  $(".cs-lightgallery").lightGallery({
+    selector: '.cs-lightbox_item', // Target individual items
+    closeOnOutside: true, // Allow closing by clicking outside the image
+    download: false, // Optionally disable download
+    speed: 500, // Animation speed
+    mode: 'fade', // Fade transition
+    enableTouch: true, // Enable touch swiping
+  });
+});
+
+   </script>
+
+
+  
+</body>
+</html>

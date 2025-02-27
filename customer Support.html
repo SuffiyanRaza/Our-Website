@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Laralink">
+  <!-- Favicon Icon -->
+  <link rel="icon" href="assets/img/logo-tittle.png">
+  <!-- Site Title -->
+  <title>Customer Support</title>
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/slick.css">
+  <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/animate.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+}
+
+.refunds{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  
+    color: black;
+}
+
+.refund-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+.head1, .head2 {
+    font-weight: 600;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out, color 0.3s ease;
+}
+
+.head1{
+    font-size: 2rem;
+    text-align: center;
+    color: #FF7900;
+    margin-bottom: 20px;
+}
+
+.head2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Hover effect for headings */
+.head2:hover {
+    color: #FF7900;
+}
+
+/* Heading Underline Animation */
+.head2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #FF7900;
+    margin-top: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.head2:hover::after {
+    width: 100px;
+}
+
+/* Paragraph Styles */
+.para {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out, transform 0.3s ease-in-out;
+}
+
+/* Hover effect for paragraphs */
+.para:hover {
+    transform: scale(1.03);
+}
+
+/* Links */
+a {
+    color: #FF7900;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #FF7900;
+    text-decoration: underline;
+}
+
+/* Scroll Animation - Visible */
+.slide-in {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="cs-preloader cs-center">
+    <div class="cs-preloader_in"></div>
+  </div>
+  <!-- Start Header Section -->
+  <header style="background-color: black; margin-top: -15px;" class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
+    <div class="cs-main_header">
+      <div class="container">
+        <div class="cs-main_header_in">
+       <a href="Index.html">
+        <img src="logo-web/Auorix LOGO_White.svg" style="width: 150px; height: auto;">
+       </a>
+          <div class="cs-main_header_center">
+            <div class="cs-nav cs-primary_font cs-medium">
+              <ul class="cs-nav_list">
+                <li class=" cs-mega_menu">
+                  <a href="Index.html">Home</a>
+                <li class="menu-item-has-children"><a href="service.html">Services</a>
+                  <ul>
+                    <li><a class="undeline" href="Videoediting.html">VIDEO EDITING</a></li>
+                    <li><a class="undeline" href="motion graphic.html">MOTION GRAPHICS</a></li>
+                    <li><a class="undeline" href="Graphics Designing.html">GRAPHIC DESIGN</a></li>
+                    <li><a class="undeline" href="logodesign.html">LOGO DESIGN</a></li>
+                    <li><a class="undeline" href="UX design.html">UI & UX DESIGN</a></li>
+                    <li><a class="undeline" href="Webdesigning.html">WEBSITE DESIGN & DEVELOPMENT</a></li>
+                  </ul>
+                </li>
+                <li ><a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul> 
+            </div>
+          </div>
+          <div class="cs-main_header_right">
+            <div class="cs-toolbox">
+              <span class="cs-icon_btn">
+                <span class="cs-icon_btn_in">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </span>
+            </div>
+            <div>
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label>
+            </div>
+            
+                    
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="cs-side_header">
+    <button class="cs-close"></button>
+    <div class="cs-side_header_overlay"></div>
+    <div class="cs-side_header_in">
+      <div class="cs-side_header_shape"></div>
+      <a class="cs-site_branding" href="index.html">
+        <img src="logo-web/Auorix LOGO_White.svg" style="width: 150px; height: auto;">
+      </a>
+      <div class="cs-side_header_box">
+        <h2 class="cs-side_header_heading">Do you have a project in your  <br> mind? Keep connect us.</h2>
+      </div>
+      <div class="cs-side_header_box">
+        <h3 class="cs-side_header_title cs-primary_color">Contact Us</h3>
+        <ul class="cs-contact_info cs-style1 cs-mp0">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 12.5C15.75 12.5 14.55 12.3 13.43 11.93C13.08 11.82 12.69 11.9 12.41 12.17L10.21 14.37C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.58C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.5C18 12.95 17.55 12.5 17 12.5ZM9 0V10L12 7H18V0H9Z" fill="#FF4A17"/>
+            </svg>
+            <span style="color: white;">+44 454 7800 112</span>
+          </li>
+          <li>
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6.98V16C20 17.1 19.1 18 18 18H2C0.9 18 0 17.1 0 16V4C0 2.9 0.9 2 2 2H12.1C12.04 2.32 12 2.66 12 3C12 4.48 12.65 5.79 13.67 6.71L10 9L2 4V6L10 11L15.3 7.68C15.84 7.88 16.4 8 17 8C18.13 8 19.16 7.61 20 6.98ZM14 3C14 4.66 15.34 6 17 6C18.66 6 20 4.66 20 3C20 1.34 18.66 0 17 0C15.34 0 14 1.34 14 3Z" fill="#FF4A17"/>
+            </svg>              
+            <span style="color: white;">infotech@arino.com</span>
+          </li>
+          <li>
+            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#FF4A17"/>
+            </svg>              
+            <span style="color: white;">50 Wall Street Suite, 44150 <br>Ohio, United States</span>
+          </li>
+        </ul>
+      </div>
+      <div class="cs-side_header_box">
+        <h3 class="cs-side_header_title cs-primary_color">Subscribe</h3>
+        <div class="cs-newsletter cs-style1">
+          <form action="#" class="cs-newsletter_form">
+            <input type="email" class="cs-newsletter_input" placeholder="example@gmail.com">
+            <button class="cs-newsletter_btn"><span>Send</span></button>
+          </form>
+          <div style="color: white;" class="cs-newsletter_text">At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit.</div>
+        </div>
+      </div>
+      <div class="cs-side_header_box">
+        <div class="cs-social_btns cs-style1">
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/fb-icon.gif" alt="">
+          </a>
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/watsapp icon.gif" alt="">     
+          </a>
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/instagram.gif" alt="">           
+          </a>
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/twitter.gif" alt="">           
+          </a>
+          <a href="#" class="cs-center">
+            <img style="border-radius: 50px;" src="assets/img/linkedin.gif" alt="">           
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br>
+<!-- vide 1 -->
+ <div class="refunds">
+<div class="refund-container">
+    <h1 class="head1" style="color: #FF7900;">Customer Support in Our Digital Services</h1>
+
+    <h2 class="head2" style="color: var(--text-color);"> Our Commitment to You</h2>
+    <p class="para">At Auorix LLC, we prioritize customer satisfaction and strive to provide seamless, high-quality support for all our digital services. Whether you need technical assistance, billing inquiries, or general guidance, our team is here to help.</p>
+
+    <h2 class="head2" style="color: var(--text-color);">Support Channels</h2>
+    <p class="para">We offer multiple support channels to ensure quick and efficient communication:</p>
+
+    <p class="para">📧 Email Support: Reach us at support@auorix.com (Response time: 24-48 hours) <br>
+        💬 Live Chat: Available on our website from 9 AM - 6 PM (GMT) <br>
+        📞 Phone Support: Call us at +44 1234 567 890 (Available for urgent inquiries) <br>
+        📱 Help Center & FAQs: Visit our online knowledge base for quick solutions</p>
+
+    <h2 class="head2" style="color: var(--text-color);"> Support Availability</h2>
+    <p class="para">Our standard support hours are:</p>
+    <p class="para">🕘 Monday - Friday: 9:00 AM - 6:00 PM (GMT) <br>
+        🕐 Saturday & Sunday: Limited email support available.    <br>
+        🚀 Premium Support: 24/7 assistance is available for clients on premium plans.</p>
+
+    <h2 class="head2" style="color: var(--text-color);">  Common Support Requests</h2>
+   
+
+    <p class="para">🔹 Technical Issues: Troubleshooting bugs, platform errors, or integrations. <br>
+        🔹 Billing & Subscriptions: Payment queries, refunds, or subscription management. <br>
+        🔹 Account Assistance: Login issues, profile updates, and security concerns. <br>
+        🔹 Custom Requests: Modifications, additional services, or new project discussions.</p>
+
+    <h2 class="head2" style="color: var(--text-color);"> Response & Resolution Time</h2>
+    <p class="para">
+        We strive to resolve all inquiries within the following timelines:</p>
+
+        <p class="para">
+            General Inquiries: 24-48 hours <br>
+Technical Issues: 2-5 business days (Depending on complexity) <br>
+Urgent Issues (System Downtime): Immediate priority (within hours) <br> <br>
+For critical issues, we recommend reaching out via Live Chat or Phone Support for the fastest response.
+        </p>
+
+    <h2 class="head2" style="color: var(--text-color);">Customer Feedback & Improvements</h2>
+    <p class="para">Your feedback helps us improve! If you have suggestions or concerns, please email feedback@auorix.com or complete our customer satisfaction survey after your support request is resolved.
+<br><br>
+        We continuously enhance our services based on your input to provide the best possible experience.
+        
+        </p>
+
+        <h2 class="head2" style="color: var(--text-color);"> Terms & Conditions</h2>
+        <p class="para">By using our support services, you agree to our Terms of Service and Privacy Policy. We reserve the right to modify our support policies based on service changes and improvements.
+<br><br>
+            For further assistance, please contact our support team anytime. We're here to help!
+            
+            </p>
+    
+</div></div>
+  
+  <!-- video 1 end-->
+
+  <!-- Start Footer -->
+  <footer style="background-color: black; padding: 40px 0; " class="cs-footer">
+    <div style="margin-bottom: -50px; " class="cs-footer_main ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="cs-footer_item">
+                        <div class="cs-text_widget">
+                            <img src="logo-web/Auorix LOGO_White.svg" style="width: 160px; height: auto; margin-top: -25px; margin-left: -7px;" alt="Thumb">
+                            <p style="color: white;  margin-top: -10px;  width: 250px;">These services enhance user engagement, streamline operations, and boost online presence. With cutting-edge technology and creative expertise, digital agencies help brands stay ahead in a competitive digital landscape.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="cs-footer_item">
+                        <h2 style=" margin-left: 60px; color: #FF7900;" class="cs-widget_title">Pages</h2>
+                        <ul style="margin-left: 60px; line-height: 12px;" class="cs-menu_widget cs-mp0">
+                            <li><a style="color: white;" href="Index.html">Home</a></li>
+                            <li><a style="color: white;" href="service.html">Services</a></li>
+                            <li><a style="color: white;" href="portfolio.html">Portfolio</a></li>
+                            <li><a style="color: white;" href="about.html">About Us</a></li>
+                            <li><a style="color: white;" href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="cs-footer_item">
+                        <h2 style=" color: #FF7900;" class="cs-widget_title">Services</h2>
+                        <ul style="line-height: 12px;" class="cs-menu_widget cs-mp0">
+                            <li><a style="color: white;" href="Videoediting.html">Video Editing</a></li>
+                            <li><a style="color: white;" href="motion graphic.html">Motion Graphics</a></li>
+                            <li><a style="color: white;" href="Graphics Designing.html">Graphic Design</a></li>
+                            <li><a style="color: white;" href="logodesign.html">Logo Design</a></li>
+                            <li><a style="color: white;" href="UX design.html">UI & UX Design</a></li>
+                            <li><a style="color: white;" href="Webdesigning.html">Website Design & <br><br> Development</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="cs-footer_item">
+                        <h2 style=" color: #FF7900;" class="cs-widget_title">Solution</h2>
+                        <ul style="line-height: 12px" class="cs-menu_widget cs-mp0">
+                          <li><a style="color: white;" href="Videoediting.html">Customer Support</a></li>
+                          <li><a style="color: white;" href="motion graphic.html">Terms & Condition</a></li>
+                          <li><a style="color: white;" href="Graphics Designing.html">Privacy Policy</a></li>
+                          <li><a style="color: white;" href="logodesign.html">Refund Policy</a></li>
+                          <li><a style="color: white;" href="UX design.html">FAQ</a></li>
+                          
+                      </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="cs-footer_item">
+                    <h2 style=" color: #FF7900;" class="cs-widget_title">Contact Us</h2>
+                     <ul style="line-height: 12px" class="cs-contact_info cs-style1 cs-mp0">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 12.5C15.75 12.5 14.55 12.3 13.43 11.93C13.08 11.82 12.69 11.9 12.41 12.17L10.21 14.37C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.58C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.5C18 12.95 17.55 12.5 17 12.5ZM9 0V10L12 7H18V0H9Z" fill="#FF7900"/>
+            </svg>
+            <span style="color: white;">+44 454 7800 112</span>
+          </li>
+          <li>
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6.98V16C20 17.1 19.1 18 18 18H2C0.9 18 0 17.1 0 16V4C0 2.9 0.9 2 2 2H12.1C12.04 2.32 12 2.66 12 3C12 4.48 12.65 5.79 13.67 6.71L10 9L2 4V6L10 11L15.3 7.68C15.84 7.88 16.4 8 17 8C18.13 8 19.16 7.61 20 6.98ZM14 3C14 4.66 15.34 6 17 6C18.66 6 20 4.66 20 3C20 1.34 18.66 0 17 0C15.34 0 14 1.34 14 3Z" fill="#FF7900"/>
+            </svg>              
+            <span style="color: white;">infotech@arino.com</span>
+          </li>
+          <li>
+            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#FF7900"/>
+            </svg>              
+            <span style="color: white;">1500 N GRANT ST STE R DENVER, <br><br> CO 80203</span>
+          </li>
+        </ul><br>
+                    <div class="cs-newsletter cs-style1">
+                      <form id="cs-form"  action="https://api.web3forms.com/submit" method="POST" class="cs-newsletter_form">
+                        <input type="hidden" name="access_key" value="c57e6bb0-ef77-4f34-b9da-7bf836b66c4d">
+                      <input style="background-color: aliceblue; color: black;" placeholder="Email" type="text" class="cs-newsletter_input" name="email" required>
+                      <button  class="cs-newsletter_btn" type="submit" style="font-size: 12px; padding: 5px 10px; min-width: 80px; margin-top: 3px;">
+                        <span>Subscribe</span>       
+                      </button>
+                      <div id="cs-result"></div>
+                      <div style="color: white;" class="cs-newsletter_text">Email is a powerful digital service used for communication.</div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div style="background-color: black; margin-bottom: -40px;" class="container">
+      <div class="cs-bottom_footer">
+        <div class="cs-bottom_footer_left">
+          <div style="color: white;" class="cs-copyright"> All Rights Reserved © Auorix  LLC. 2025</div>
+        </div>
+        <ul class="cs-footer_links cs-mp0">
+          <div class="cs-social_btns cs-style1">
+            <a href="#" class="cs-center social-icon">
+              <img src="assets/img/icons8-fb-50.png" alt="">
+            </a>
+            <a href="#" class="cs-center social-icon">
+              <img src="assets/img/icons8-insta-50.png" alt="">     
+            </a>
+            <a href="#" class="cs-center social-icon">
+              <img src="assets/img/icons8-linkedin-50.png" alt="">           
+            </a>
+            <a href="#" class="cs-center social-icon">
+              <img src="assets/img/icons8-twitter-24.png" alt="">           
+            </a>
+           
+            
+          </div>
+        </ul>
+      </div>
+      </div>
+    </div>
+</footer>
+
+  <!-- End Footer -->
+
+  <span class="cs-scrollup">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z" fill="currentColor"/>
+    </svg>      
+  </span>
+  
+  <!-- Start Video Popup -->
+  <div class="cs-video_popup">
+    <div class="cs-video_popup_overlay"></div>
+    <div class="cs-video_popup_content">
+      <div class="cs-video_popup_layer"></div>
+      <div class="cs-video_popup_container">
+        <div class="cs-video_popup_align">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="about:blank"></iframe>
+          </div>
+        </div>
+        <div class="cs-video_popup_close"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Video Popup -->
+
+  <!-- Script -->
+  <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/plugins/isotope.pkg.min.js"></script>
+  <script src="assets/js/plugins/jquery.slick.min.js"></script>
+  <script src="assets/js/plugins/jquery.counter.min.js"></script>
+  <script src="assets/js/plugins/lightgallery.min.js"></script>
+  <script src="assets/js/plugins/wow.min.js"></script>
+  <script src="assets/js/plugins/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+
+  <script>document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll("h1, h2, p");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("slide-in");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach((el) => observer.observe(el));
+});
+</script>
+</body>
+</html>
